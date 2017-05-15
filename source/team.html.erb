@@ -1,0 +1,33 @@
+<ul class="list-inline text-center">
+  <% ["boris", "seb", "romain"].each do |member| %>
+    <li>
+      <%= image_tag "#{member}.png", class: "img-circle" %>
+      <h3><%= member.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
+
+
+<div class="container text-center padded">
+  <h1>Our team</h1>
+  <ul class="list-inline">
+    <li>
+      <h2>Paul</h2>
+      <img src="http://placehold.it/100x100" alt="" class="img-circle">
+    </li>
+    <li>
+      <h2>John</h2>
+      <img src="http://placehold.it/100x100" alt="" class="img-circle">
+    </li>
+    <li>
+      <h2>Georges</h2>
+      <img src="http://placehold.it/100x100" alt="" class="img-circle">
+    </li>
+  </ul>
+
+  <h3 class="padded">
+    <a href="mailto:contact@airbnb.com">
+      <i class="fa fa-envelope"></i> contact@airbnb.com
+    </a>
+  </h3>
+</div>
